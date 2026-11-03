@@ -1,4 +1,3 @@
-<img src="docs/images/icon.png" alt="Safari Side Search icon" width="96" height="96">
 
 # Safari Side Search · Safari 侧栏搜索
 
