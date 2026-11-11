@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>zh_CN</string>
+	<key>CFBundleDisplayName</key>
+	<string>Safari 侧栏搜索</string>
+	<key>CFBundleExecutable</key>
+	<string>SafariSideSearchExtension</string>
+	<key>CFBundleIdentifier</key>
+	<string>dev.local.SafariSideSearch.Extension</string>
+	<key>CFBundleName</key>
+	<string>SafariSideSearchExtension</string>
+	<key>CFBundlePackageType</key>
+	<string>XPC!</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.2.1</string>
+	<key>CFBundleVersion</key>
+	<string>10</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>13.0</string>
+	<key>NSExtension</key>
+	<dict>
+		<key>NSExtensionPointIdentifier</key>
+		<string>com.apple.Safari.extension</string>
+		<key>NSExtensionPrincipalClass</key>
+		<string>SafariSideSearchExtension.SafariExtensionHandler</string>
+		<key>SFSafariContentScript</key>
+		<array>
+			<dict>
+				<key>Script</key>
+				<string>content.js</string>
+			</dict>
+		</array>
+		<key>SFSafariContextMenu</key>
+		<array>
+			<dict>
+				<key>Command</key>
+				<string>search-selection</string>
+				<key>Text</key>
+				<string>在侧栏搜索</string>
+			</dict>
+		</array>
+		<key>SFSafariExtensionDescription</key>
+		<string>选中文字，右键在原生侧栏中搜索并继续浏览，支持切换和自定义搜索引擎。</string>
+		<key>SFSafariToolbarItem</key>
+		<dict>
+			<key>Action</key>
+			<string>Command</string>
+			<key>Identifier</key>
+			<string>side-search</string>
+			<key>Image</key>
+			<string>toolbar.pdf</string>
+			<key>Label</key>
+			<string>侧栏搜索</string>
+		</dict>
+		<key>SFSafariWebsiteAccess</key>
+		<dict>
+			<key>Level</key>
+			<string>All</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
